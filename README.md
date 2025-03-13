@@ -1,20 +1,20 @@
-## Bookstore API
+## Bookstore API ##
 
-## Overview
+## Overview ##
 
-## **The Bookstore API is a RESTful service built using Go and the Gorilla Mux router. It provides endpoints to manage books, allowing users to create, retrieve, update, and delete book records stored in a MySQL database.
+## **The Bookstore API is a RESTful service built using Go and the Gorilla Mux router. It provides endpoints to manage books, allowing users to create, retrieve, update, and delete book records stored in a MySQL database.** ##
 
-## Features
+   Features 
 
-## Add new books
+   Add new books
 
-## Retrieve all books
+   Retrieve all books
 
-## Get details of a specific book by ID
+ Get details of a specific book by ID
 
-## Update book details
+Update book details
 
-## Delete a book
+  Delete a book
 
 ## ** Project Structure
 
@@ -35,7 +35,7 @@ bookstore-api/
 
 ## Installation & Setup
 
-# ** Prerequisites
+ Prerequisites
 
 Go 1.22.2
 
