@@ -1,58 +1,64 @@
-## Bookstore API ##
+## Bookstore API 
 
-## Overview ##
+## Overview 
 
 ## **The Bookstore API is a RESTful service built using Go and the Gorilla Mux router. It provides endpoints to manage books, allowing users to create, retrieve, update, and delete book records stored in a MySQL database.** ##
 
-   Features 
+1.Features 
 
-   Add new books
+2.Add new books
 
-   Retrieve all books
+3.Retrieve all books
 
- Get details of a specific book by ID
+4.Get details of a specific book by ID
 
-Update book details
+5.Update book details
 
-  Delete a book
+6.Delete a book
 
-## ** Project Structure
+## Project Structure 
+
 
 bookstore-api/
+
 ├── main.go
+
 ├── pkg/
+
 │   ├── config/
+
 │   │   ├── app.go
+
 │   ├── controllers/
+
 │   │   ├── bookController.go
 │   ├── models/
+
 │   │   ├── book.go
+
 │   ├── routes/
+
 │   │   ├── bookRoutes.go
+
 │   ├── utils/
+
 │       ├── utils.go
+
 └── go.mod
 
 ## Installation & Setup
 
- Prerequisites
+##  Prerequisites
 
 Go 1.22.2
-
 MySQL
-
 Steps
-
 ## Clone the repository:
-
-# * git clone https://github.com/amar/go-bookstore.git
+#  git clone https://github.com/amar/go-bookstore.git
 cd go-bookstore
-
 ## Install dependencies:
-
 go mod tidy
-
-## ** Update database credentials in pkg/config/app.go:
+##  Update database credentials in pkg/config/app.go:
 
 d, err := gorm.Open("mysql", "root:root@tcp(127.0.0.1:3306)/simplerest?charset=utf8&parseTime=True&loc=Local")
 
@@ -69,38 +75,30 @@ Endpoint
 Description
 
 POST
-
 /book/
 
 Create a new book
-
 GET
 
 /book/
-
 Get all books
-
 GET
 
 /book/{id}
-
 Get a book by ID
-
 PUT
 
 /book/{id}
 
 Update a book
-
 DELETE
 
 /book/{id}
-
 Delete a book
 
 ## Dependencies
 
-The project uses the following Go packages:
+## The project uses the following Go packages:
 
 Gorilla Mux (Router) - github.com/gorilla/mux v1.8.1
 
