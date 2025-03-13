@@ -1,22 +1,22 @@
-Bookstore API
+## Bookstore API
 
-Overview
+## Overview
 
-The Bookstore API is a RESTful service built using Go and the Gorilla Mux router. It provides endpoints to manage books, allowing users to create, retrieve, update, and delete book records stored in a MySQL database.
+## **The Bookstore API is a RESTful service built using Go and the Gorilla Mux router. It provides endpoints to manage books, allowing users to create, retrieve, update, and delete book records stored in a MySQL database.
 
-Features
+## Features
 
-Add new books
+## Add new books
 
-Retrieve all books
+## Retrieve all books
 
-Get details of a specific book by ID
+## Get details of a specific book by ID
 
-Update book details
+## Update book details
 
-Delete a book
+## Delete a book
 
-Project Structure
+## ** Project Structure
 
 bookstore-api/
 ├── main.go
@@ -33,9 +33,9 @@ bookstore-api/
 │       ├── utils.go
 └── go.mod
 
-Installation & Setup
+## Installation & Setup
 
-Prerequisites
+# ** Prerequisites
 
 Go 1.22.2
 
@@ -43,26 +43,26 @@ MySQL
 
 Steps
 
-Clone the repository:
+## Clone the repository:
 
-git clone https://github.com/amar/go-bookstore.git
+# * git clone https://github.com/amar/go-bookstore.git
 cd go-bookstore
 
-Install dependencies:
+## Install dependencies:
 
 go mod tidy
 
-Update database credentials in pkg/config/app.go:
+## ** Update database credentials in pkg/config/app.go:
 
 d, err := gorm.Open("mysql", "root:root@tcp(127.0.0.1:3306)/simplerest?charset=utf8&parseTime=True&loc=Local")
 
-Run the application:
+## Run the application:
 
 go run main.go
 
-API Endpoints
+## API Endpoints
 
-Method
+## Method
 
 Endpoint
 
@@ -98,7 +98,7 @@ DELETE
 
 Delete a book
 
-Dependencies
+## Dependencies
 
 The project uses the following Go packages:
 
@@ -110,6 +110,6 @@ MySQL Driver - github.com/go-sql-driver/mysql v1.5.0
 
 Inflection (Singular/plural conversion) - github.com/jinzhu/inflection v1.0.0
 
-License
+## License
 
-This project is licensed under the MIT License.
+This project is open source api project you can use it and modified it.
